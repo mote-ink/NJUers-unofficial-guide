@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>南京大学常用平台导航</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'Microsoft YaHei', 'Segoe UI', Tahoma, sans-serif;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                min-height: 100vh;
+                padding: 40px 20px;
+            }
+
+            .container {
+                max-width: 900px;
+                margin: 0 auto;
+            }
+
+            .header {
+                display: flex;
+                align-items: center;
+                margin-bottom: 40px;
+            }
+
+            .logo {
+                width: 150px;
+                height: auto;
+                margin-right: 20px;
+                filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+            }
+
+            h1 {
+                text-align: center;
+                color: white;
+                font-size: 2.5em;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+                flex: 1;
+            }
+
+            .card-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 20px;
+            }
+
+            .card {
+                background: white;
+                border-radius: 12px;
+                padding: 25px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: all 0.3s ease;
+                text-decoration: none;
+                display: block;
+            }
+
+            .card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            }
+
+            .card .title {
+                color: #667eea;
+                font-size: 1.2em;
+                font-weight: 600;
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .card:hover .title {
+                color: #764ba2;
+            }
+
+            .card .description {
+                color: #666;
+                font-size: 0.95em;
+                line-height: 1.5;
+            }
+
+            .card .tag {
+                display: inline-block;
+                background: #f0f0f0;
+                color: #666;
+                padding: 4px 12px;
+                border-radius: 20px;
+                font-size: 0.85em;
+                margin-top: 10px;
+            }
+
+            .footer {
+                text-align: center;
+                color: rgba(255, 255, 255, 0.8);
+                margin-top: 40px;
+                font-size: 0.9em;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <img src="nju-logo.png" alt="南京大学校徽" class="logo">
+                <h1>🎓 南京大学常用平台导航</h1>
+            </div>
+            
+            <div class="card-grid">
+                <a href="https://ehall.nju.edu.cn/" target="_blank" class="card">
+                    <span class="title">南京大学网上办事服务中心</span>
+                    <div class="description">一站式校园网上办事平台</div>
+                    <span class="tag">总平台</span>
+                </a>
+
+                <a href="https://xk.nju.edu.cn/" target="_blank" class="card">
+                    <span class="title">南京大学选课平台</span>
+                    <div class="description">课程查询与选课系统</div>
+                    <span class="tag">选课</span>
+                </a>
+
+                <a href="https://ndwy.nju.edu.cn/" target="_blank" class="card">
+                    <span class="title">南京大学本科生院</span>
+                    <div class="description">报名五育活动，查询五育活动时长</div>
+                    <span class="tag">五育活动</span>
+                </a>
+
+                <a href="https://youth.nju.edu.cn/" target="_blank" class="card">
+                    <span class="title">南京大学第二课堂</span>
+                    <div class="description">查询志愿服务活动时长</div>
+                    <span class="tag">志愿服务</span>
+                </a>
+
+                <a href="https://study.nju.edu.cn/home/index.mooc" target="_blank" class="card">
+                    <span class="title">南京大学阅读课程平台</span>
+                    <div class="description">参与阅读课程，提交作业</div>
+                    <span class="tag">阅读课程</span>
+                </a>
+
+                <a href="https://mail.smail.nju.edu.cn/" target="_blank" class="card">
+                    <span class="title">南京大学邮箱</span>
+                    <div class="description">发送邮件，接收邮件</div>
+                    <span class="tag">邮箱</span>
+                </a>
+
+                <a href="https://box.nju.edu.cn/" target="_blank" class="card">
+                    <span class="title">南京大学云盘</span>
+                    <div class="description">上传文件，下载文件</div>
+                    <span class="tag">云存储</span>
+                </a>
+
+                <a href="https://lms.nju.edu.cn/" target="_blank" class="card">
+                    <span class="title">南京大学我的课程</span>
+                    <div class="description">查看课程，提交作业</div>
+                    <span class="tag">课程学习</span>
+                </a>
+            </div>
+
+            <div class="footer">
+                <p>© NJU Navigation</p>
+            </div>
+        </div>
+    </body>
+</html>
