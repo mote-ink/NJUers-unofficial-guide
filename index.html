@@ -44,6 +44,14 @@
                 flex: 1;
             }
 
+            .subtitle {
+                text-align: center;
+                color: rgba(255, 255, 255, 0.85);
+                font-size: 0.9em;
+                margin-top: 8px;
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            }
+
             .card-grid {
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -107,6 +115,7 @@
             <div class="header">
                 <h1>🎓 南京大学常用平台导航</h1>
             </div>
+            <p class="subtitle">本网站为学生自行创立，非官方性质</p>
             
             <div class="card-grid">
                 <a href="https://ehall.nju.edu.cn/" target="_blank" class="card">
@@ -115,7 +124,7 @@
                     <span class="tag">总平台</span>
                 </a>
 
-                <a href="https://xk.nju.edu.cn/" target="_blank" rel="noreferrer noopener" referrerpolicy="no-referrer" class="card">
+                <a href="https://xk.nju.edu.cn/" target="_blank"  rel="noreferrer noopener" referrerpolicy="no-referrer"class="card">
                     <span class="title">南京大学选课平台</span>
                     <div class="description">课程查询与选课系统</div>
                     <span class="tag">选课</span>
@@ -165,10 +174,10 @@
     </body>
     <script>
         document.querySelectorAll('.card-grid a').forEach(function(link) {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                window.open(this.href, '_blank', 'noopener,noreferrer');
-            });
+           link.addEventListener('click', function(e) {
+               e.preventDefault();
+               window.open(this.href, '_blank', 'noopener,noreferrer');
+           });
         });
     </script>
 </html>
